@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="Enviromental_Survey.Dashboard.Dashboard" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+ 
+    <!-- Fonts & Styles -->
+    <link href="Dashboard/Assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet" />
+    <link href="Dashboard/Assets/css/sb-admin-2.min.css" rel="stylesheet" />
+
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page-top">
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src='<%= ResolveUrl("~/Dashboard/Assets/vendor/jquery/jquery.min.js") %>'></script>
+
+    <!-- Bootstrap Bundle (Popper + Bootstrap JS) -->
+    <script src='<%= ResolveUrl("~/Dashboard/Assets/vendor/bootstrap/js/bootstrap.bundle.min.js") %>'></script>
+
+    <!-- jQuery Easing -->
+    <script src='<%= ResolveUrl("~/Dashboard/Assets/vendor/jquery-easing/jquery.easing.min.js") %>'></script>
+
+    <!-- SB Admin 2 JS -->
+    <script src='<%= ResolveUrl("~/Dashboard/Assets/js/sb-admin-2.min.js") %>'></script>
+
+
+
+
+
+</body>
+</html>
